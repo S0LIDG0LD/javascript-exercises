@@ -10,8 +10,16 @@ const sum = function(arr) {
 	return arr.reduce((total, item) => (total += item), 0);
 };
 
-const multiply = function() {
+// const multiply = function(...args) {
+//   total = 0;
+//   for (let arg in args) {
+//     total *= arg;
+//   }
+//   return total;
+// };
 
+const multiply = function(arr) {
+  return arr.reduce((total, item) => (total *= item), 1);
 };
 
 const power = function() {
